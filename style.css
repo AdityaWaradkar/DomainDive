@@ -1,0 +1,40 @@
+.header
+{
+    text-align: center;
+    margin-left: 200px;
+    margin-left: 2rem;
+
+    
+}
+h1
+{
+    font-family: Josefin Sans;
+    letter-spacing: 1.5px;
+}
+h2{
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: Roboto Mono;
+    word-spacing: 5px;
+    
+}
+
+body{
+    background: #24162e; 
+    background-image: linear-gradient(to right, #E5D9F2, #CDC1FF);
+    background-size: cover; 
+    background-clip: border-box; 
+  
+}
+
+.nav-bar
+{
+    margin-top: 50px;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+}
