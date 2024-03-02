@@ -1,3 +1,4 @@
+
 .header
 {
     text-align: center;
@@ -23,7 +24,7 @@ h2{
 
 body{
     background: #24162e; 
-    background-image: linear-gradient(to right, #E5D9F2, #CDC1FF);
+    background-image: linear-gradient(to right, #d9f2e2, #ffc1f0);
     background-size: cover; 
     background-clip: border-box; 
   
@@ -37,4 +38,9 @@ body{
     justify-content: space-evenly;
     align-items: center;
     background-color: aliceblue;
+}
+
+.cont
+{
+   margin-top: 100px;
 }
