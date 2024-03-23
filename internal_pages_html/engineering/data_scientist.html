@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Science</title>
+<style>
+    .container > p,li,ul{
+        font-family: Julius Sans One;
+        font-weight: 800;
+        word-spacing: 7px;
+    }
+    .roadmap
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shrink-text > p
+    {
+        font-size: 5rem;
+    }
+.header
+{
+    text-align: center;
+    width: 100%;
+}
+
+h1
+{
+    font-family: Julius Sans One;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    line-height: 10px;
+    padding-top: 60px;
+}
+h2,.shrink-text
+{
+    font-family: Josefin Sans;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+.image1
+{
+    height: auto;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image2
+{
+    height: auto;
+    width: 400px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+button
+{
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+    
+.shrink-text {
+    font-size: 18px;
+    color: #333; /* Initial text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition effect */
+
+}
+
+.shrink-text:hover {
+    color: #656565; /* Change text color to white on hover */
+    transform: scale(1.1); /* Shrink the text to 90% of its original size on hover */
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    /* gardient */
+    background: #000000; 
+    background-image: linear-gradient(to right, 
+    #ebf5e4, rgb(237, 237, 237));
+    background-size: cover; 
+    background-clip: border-box; 
+    padding-top: 30px;
+    
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 2.2rem;
+}
+
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* th {
+    background-color: #f2f2f2;
+    color: #333;
+} */
+
+/* Hover Effect */
+a:hover {
+    color: #007bff;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Data Science</h1>
+    </div>
+   <br>
+    <h2>Introduction : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/hand-drawn-data-driven-illustration_52683-87398.avif">
+    <p>In the dynamic world of data science and analytics, aspiring enthusiasts are welcomed into an exciting realm where data serves as the canvas for innovation and discovery. Embark on a journey where each dataset is a tantalizing mystery waiting to be unraveled, and every insight is a stepping stone towards shaping a brighter future.
+
+        Imagine yourself as a digital detective, equipped with the skills and tools to decode the intricate patterns hidden within vast datasets. As a data scientist or analyst, you'll wield the power of numbers and algorithms to predict trends, optimize processes, and solve complex challenges across diverse industries.
+        
+        From revolutionizing healthcare to driving financial decisions, the possibilities are limitless. Dive into this captivating field where each day presents new opportunities for growth, learning, and impact. Whether you're drawn to the allure of predictive modeling, the thrill of data visualization, or the challenge of machine learning, data science and analytics offer a world of endless fascination and reward.
+        
+        So, if you're ready to embark on a thrilling adventure at the forefront of technological innovation, join us in the exhilarating world of data science and analytics, where every insight is a triumph and every discovery is a testament to your passion and expertise. Welcome to the future of data-driven excellence.
+        
+        </p>
+    <br>
+    <hr>
+    <br>
+    <h2>Pre-requisite Knowledge : </h2>
+    <img class="image2" alt="" src="../../Assets/Home_page/Internal_pages/engineering/symbols-come-out-bulb-top-book_1232-908.jpg">
+    <ul>
+        <li>Mathematics Proficiency: A solid foundation in mathematics is essential, including concepts such as algebra, calculus, probability, and statistics. Understanding these principles forms the basis for data analysis and modeling.
+
+        </li>
+        <li>. Programming Skills: Proficiency in programming languages such as Python, R, SQL, or Java is crucial for data manipulation, analysis, and visualization. Knowledge of programming enables data scientists and analysts to extract insights from large datasets efficiently.</li>
+        <li>Mathematics Proficiency: A solid foundation in mathematics is essential, including concepts such as algebra, calculus, probability, and statistics. Understanding these principles forms the basis for data analysis and modeling.</li>
+        <li>Statistical Understanding: Familiarity with statistical methods and techniques is necessary for interpreting data, conducting hypothesis testing, and building predictive models. Knowledge of statistics aids in making informed decisions and drawing meaningful conclusions from data.
+        </li>
+        <li>Problem-Solving Abilities: Data scientists and analysts should possess strong problem-solving skills to tackle complex challenges and identify opportunities for improvement using data-driven approaches. Critical thinking and analytical reasoning are essential for addressing diverse business and analytical problems effectively.</li>
+    </ul>
+     
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+        <div class="roadmap"><a href="../../Assets/Home_page/Internal_pages/engineering/Data Science-roadmap.jpg"><h2 class="shrink-text"><p>Roadmap</p></h2></a></div>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Scope in Masters : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/student-graduation-cap-diploma-scroll_107791-15847.jpg">
+    <p>A Master's degree in Data Science and Analytics offers a vast scope for individuals seeking to excel in the dynamic and rapidly evolving field of data-driven decision-making. With the exponential growth of data across industries, the demand for skilled professionals proficient in data analysis, machine learning, and statistical modeling continues to soar. 
+
+        A Master's program equips students with advanced knowledge and practical skills in data science methodologies, tools, and techniques. Graduates are prepared to tackle complex challenges in data collection, preprocessing, analysis, and interpretation. They gain expertise in predictive modeling, data visualization, and optimization techniques, enabling them to extract actionable insights from large and complex datasets.
+        
+        Moreover, a Master's degree opens doors to diverse career opportunities in various sectors, including finance, healthcare, e-commerce, and technology. Graduates may pursue roles such as data scientist, business analyst, data engineer, or machine learning specialist. Additionally, the interdisciplinary nature of data science enables professionals to contribute to cutting-edge research and innovation across domains, making it a highly rewarding and intellectually stimulating field to explore through advanced education.
+        
+        </p>
+
+     <br>
+     <br><hr><br><br>
+    
+    <h2>Best Countries and Colleges : </h2>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Colleges</th>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Stanford University, Massachusetts Institute of Technology (MIT), University of California, Carnegie Mellon University, Harvard University
+             </td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>University of Oxford, University of Cambridge, Imperial College London , ,University College London (UCL) , University of Edinburgh</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>University of Toronto, University of British Columbia , McGill University , University of Waterloo , Simon Fraser University</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>Technical University of Munich (TUM), Munich, University of Freiburg, Freiburg , RWTH Aachen University , Humboldt University of Berlin </td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Australian National University (ANU) , University of Melbourne , University of Sydney  , University of Queensland , Monash University</td>
+        </tr>
+    </table>
+
+    <br><br><hr><br><br>
+    
+    <h2>Current Demand Scenario : </h2>
+    <p>The demand for professionals in data science and analytics is soaring globally, driven by the exponential growth of data and the increasing reliance on data-driven insights for decision-making across industries. Companies are actively seeking skilled professionals who can harness data to extract actionable insights, drive innovation, and gain a competitive edge in the market. As organizations continue to prioritize data-driven strategies, the demand for data scientists, analysts, and related roles is expected to remain high, making it one of the most sought-after fields in today's job market.</p>
+    
+    <br><br><hr><br><br>
+    <h2>Job Roles : </h2>
+    <p>In the realm of data science and analytics, companies entrust professionals with a myriad of tasks aimed at extracting insights and driving decision-making processes. Here's a glimpse into the diverse range of roles and responsibilities:
+        <li> Data Analysis: Examining data sets to identify trends, patterns, and correlations, offering valuable insights to guide business strategies.</li>
+        <li>Predictive Modeling: Developing algorithms and machine learning models to forecast future trends, behaviors, or outcomes based on historical data.</li>
+        <li>Data Visualization: Creating visually appealing charts, graphs, and dashboards to communicate complex data insights in an accessible manner.</li>
+        <li>Statistical Analysis: Applying statistical techniques to analyze data, validate hypotheses, and draw conclusions to support decision-making.</li>
+        <li>Business Intelligence: Generating reports, KPI dashboards, and performance metrics to provide actionable insights for stakeholders at all levels of the organization.</li>
+        <li>Data Engineering: Building and maintaining data infrastructure, including data pipelines, databases, and storage solutions, to ensure efficient data management</li>
+        </p>
+    <br><br><hr><br><br>
+    <h2>Expected Salary : </h2>
+    <p>Salaries in data science and analytics vary based on factors such as location, experience, education, and industry. Entry-level positions typically offer salaries ranging from $60,000 to $100,000 per year, while mid-level positions can command salaries upwards of $100,000 to $150,000 annually. Professionals with advanced degrees or specialized skills may earn even higher salaries, exceeding $150,000 per year. Additionally, salaries can vary significantly based on the geographic location, with major tech hubs such as Silicon Valley, New York City, and San Francisco offering higher compensation due to the higher cost of living and demand for skilled talent. Overall, data science and analytics offer competitive salaries and lucrative career opportunities for professionals with the right skills and expertise.</p>
+    
+</div>
+
+</body>
+</html>
