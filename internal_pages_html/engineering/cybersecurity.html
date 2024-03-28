@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity</title>
+<style>
+    .container > p,li,ul{
+        font-family: Julius Sans One;
+        font-weight: 800;
+        word-spacing: 7px;
+    }
+    .roadmap
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shrink-text > p
+    {
+        font-size: 5rem;
+    }
+.header
+{
+    text-align: center;
+    width: 100%;
+}
+
+h1
+{
+    font-family: Julius Sans One;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    line-height: 10px;
+    padding-top: 60px;
+}
+h2,.shrink-text
+{
+    font-family: Josefin Sans;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+.image1
+{
+    height: auto;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image2
+{
+    height: auto;
+    width: 400px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+button
+{
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+    
+.shrink-text {
+    font-size: 18px;
+    color: #333; /* Initial text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition effect */
+
+}
+
+.shrink-text:hover {
+    color: #656565; /* Change text color to white on hover */
+    transform: scale(1.1); /* Shrink the text to 90% of its original size on hover */
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    /* gardient */
+    background: #000000; 
+    background-image: linear-gradient(to right, 
+    #d9e8e9, rgb(237, 237, 237));
+    background-size: cover; 
+    background-clip: border-box; 
+    padding-top: 30px;
+    
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 2.2rem;
+}
+
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* th {
+    background-color: #f2f2f2;
+    color: #333;
+} */
+
+/* Hover Effect */
+a:hover {
+    color: #007bff;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Cybersecurity</h1>
+    </div>
+   <br>
+    <h2>Introduction : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/cybersecurity.avif">
+    <p>Safeguarding the Digital Frontier
+        In an increasingly interconnected world, the importance of cybersecurity cannot be overstated. As our reliance on digital technologies grows, so too does the need to protect sensitive information from cyber threats. Cybersecurity professionals serve as the guardians of the digital frontier, defending against malicious attacks and ensuring the integrity, confidentiality, and availability of data.
+         </p>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Pre-requisite Knowledge : </h2>
+    <img class="image2" alt="" src="../../Assets/Home_page/Internal_pages/engineering/pre-requisite.jpg">
+    <ul>
+        <li>Understanding of computer networks and systems.</li>
+        <li>Proficiency in programming languages such as Python, Java, or C++.</li>
+        <li>Knowledge of operating systems like Windows, Linux, and Unix.</li>
+        <li>Familiarity with encryption techniques and protocols.</li>
+        <li>Strong analytical and problem-solving skills.</li>
+        <li>Continuous learning and staying updated on emerging threats and technologies.</li>
+    </ul>
+     
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+        <div class="roadmap"><a href="../../Assets/Home_page/Internal_pages/engineering/Cybersecurity-roadmap.jpg"><h2 class="shrink-text"><p>Roadmap</p></h2></a></div>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Scope in Masters : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/student-graduation-cap-diploma-scroll_107791-15847.jpg">
+    <p>A Master's degree in Cybersecurity opens doors to advanced roles and specialization within the field. It equips students with in-depth knowledge of cybersecurity principles, advanced techniques, and hands-on experience through practical projects and internships. Graduates can pursue careers as cybersecurity analysts, penetration testers, security architects, and more, with opportunities for leadership roles and research positions.</p>
+
+     <br>
+     <br><hr><br><br>
+    
+    <h2>Best Countries and Colleges : </h2>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Colleges</th>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Stanford University, Massachusetts Institute of Technology (MIT), University of California, Georgia Institute of Technology, Carnegie Mellon University (CMU)  </td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>University of Oxford, University of Cambridge, Imperial College London, University of Edinburgh, University of London </td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>University of Toronto, University of British Columbia, University of Waterloo, Carleton University, Ryerson University </td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>Technical University of Munich (TUM), University of Bonn, Ruhr-University Bochum, University of Hamburg, University of Passau  </td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Australia National University, University of Melbourne, University of New South Wales, Monash University, Queensland University of Technology(QUT) </td>
+        </tr>
+    
+    </table>
+
+    <br><br><hr><br><br>
+    
+    <h2>Current Demand Scenario : </h2>
+    <p>Cybersecurity demand is soaring due to increased cyber threats and digitization. Businesses seek experts to protect data and systems. Industries like finance, healthcare, and tech are prime targets. Roles like Security Analysts and Ethical Hackers are in high demand. Salaries are competitive with ample growth opportunities.</p>
+    
+    <br><br><hr><br><br>
+    <h2>Job Roles : </h2>
+    <p>In the realm of Machine Learning, professionals engage in a spectrum of tasks aimed at leveraging data to drive strategic decisions and foster innovation within companies. This encompasses:
+        <li>Cybersecurity Analyst: Analyzes and monitors security systems, detects and responds to cyber threats, and implements security measures to protect against breaches.</li>
+        <li>Penetration Tester (Ethical Hacker): Conducts controlled attacks on systems and networks to identify vulnerabilities and weaknesses, helping organizations strengthen their defenses.</li>
+        <li>Security Architect: Designs and builds secure IT infrastructures, develops security policies and procedures, and implements technologies to safeguard against cyber threats.</li>
+        <li>Incident Responder: Investigates security incidents and breaches, coordinates response efforts, and implements remediation measures to mitigate the impact and prevent future occurrences.</li>
+        <li>Security Consultant: Provides advisory services to organizations on cybersecurity strategies, risk assessments, compliance requirements, and the selection of security solutions.</li>
+        <li>Cryptographer: Develops cryptographic algorithms and protocols to secure data transmission and storage, ensuring confidentiality, integrity, and authenticity.</li>
+        <li>Security Engineer: Designs, implements, and maintains security solutions such as firewalls, intrusion detection systems (IDS), and endpoint protection systems (EPS) to protect against cyber threats.</li>
+        <li>Forensic Analyst: Investigates cybercrimes, collects and analyzes digital evidence, and prepares reports for legal proceedings and law enforcement agencies.</li>
+        <li>Security Operations Center (SOC) Analyst: Monitors and analyzes security alerts and incidents, investigates potential threats, and escalates issues for further investigation or response.</li>
+        <li>Chief Information Security Officer (CISO): Oversees an organization's cybersecurity strategy, policies, and programs, ensuring alignment with business objectives and regulatory requirements.</li>
+        </p>
+    <br><br><hr><br><br>
+    <h2>Expected Salary : </h2>
+    <p><li>Salaries in cybersecurity vary based on factors like experience, location, and role. Entry-level positions typically offer $60,000 to $80,000 annually.</li>
+    <li>
+        Experienced professionals or those with advanced degrees can earn over $150,000 per year. Demand for cybersecurity talent continues to drive competitive salaries globally.</li>
+        <li>Specialized roles like Ethical Hackers or Security Engineers command higher pay.</li>
+    <li>
+        Overall, cybersecurity offers lucrative career opportunities with room for financial growth.
+    </li></p>
+    
+</div>
+
+</body>
+</html>
