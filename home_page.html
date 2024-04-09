@@ -21,6 +21,8 @@
    <!-- brand name -->
     <div class="header">
         <h1>DomainDive</h1>
+        <h2><p>Welcome, <span id="userNameDisplay"></span></p>
+        </h2>
     </div>
 
    <!-- nav-bar -->
@@ -38,13 +40,13 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/machine_learning.html">Machine Learning</a></li>
-                <li><a class="dropdown-item" href="#">Web Development</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/data_scientist.html">Data Science</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/cybersecurity.html">Cybersecurity</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/devops_engineer.html">DevOps</a></li>
-                <li><a class="dropdown-item" href="#">Python Developer</a></li>
-                <li><a class="dropdown-item" href="#">Java Developer</a></li>
+                <li><a class="dropdown-item" href="./internal_pages_html/engineering/Python_developer.html">Python Developer</a></li>
+                <li><a class="dropdown-item" href="./internal_pages_html/engineering/java_developer.html">Java Developer</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/game_developer.html">Game Developer</a></li>
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
               </ul>
             </li>
           </ul>
@@ -70,9 +72,8 @@
                 Help & Support
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="./internal_pages_html/help_and_support/help_us_improve.html">Help us improve </a></li>
+                
               </ul>
             </li>
           </ul>
@@ -83,9 +84,7 @@
                 About Us
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="./internal_pages_html/about_us/about_us.html">About us</a></li>
               </ul>
             </li>
           </ul>
@@ -141,5 +140,19 @@
       </div> -->
      
    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+    let Name = document.getElementById('nameInp');
+   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve the user's name from local storage
+        const userName = localStorage.getItem('userName');
+        if(userName) {
+            // Display the user's name wherever needed on the home page
+            document.getElementById('userNameDisplay').textContent = userName;
+        }
+    });
+</script>
+
 </body>
 </html>

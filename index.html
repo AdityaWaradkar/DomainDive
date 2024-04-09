@@ -88,20 +88,38 @@
         let PasswordInp = document.getElementById('passwordInp');
         let Mainform = document.getElementById('Mainform');
 
-        let RegisterUser = evt => {
-            evt.preventDefault();
+        // let RegisterUser = evt => {
+        //     evt.preventDefault();
 
-            createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
-            .then(credentials => {
-                console.log(credentials);
-                window.location.href = "home_page.html";
-            })
-            .catch(error => {
-                alert(error.message);
-                console.log(error.code);
-                console.log(error.message);
-            });
-        }
+        //     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
+        //     .then(credentials => {
+        //         console.log(credentials);
+        //         window.location.href = "home_page.html";
+        //     })
+        //     .catch(error => {
+        //         alert(error.message);
+        //         console.log(error.code);
+        //         console.log(error.message);
+        //     });
+        // }
+        let RegisterUser = evt => {
+    evt.preventDefault();
+
+    createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
+    .then(credentials => {
+        console.log(credentials);
+        // Store the user's name in local storage
+        localStorage.setItem('userName', NameInp.value);
+        window.location.href = "home_page.html";
+    })
+    .catch(error => {
+        alert(error.message);
+        console.log(error.code);
+        console.log(error.message);
+    });
+}
+
+
 
         Mainform.addEventListener('submit', RegisterUser);
 
@@ -115,6 +133,7 @@
             signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
             .then(credentials => {
                 console.log(credentials);
+                localStorage.setItem('userName', credentials.user.displayName);
                 window.location.href = "home_page.html";
             })
             .catch(error => {
