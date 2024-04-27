@@ -21,8 +21,7 @@
    <!-- brand name -->
     <div class="header">
         <h1>DomainDive</h1>
-        <h2><p>Welcome, <span id="userNameDisplay"></span></p>
-        </h2>
+        <h2>Welcome, <span id="userName"></span></h2>
     </div>
 
    <!-- nav-bar -->
@@ -40,7 +39,7 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/machine_learning.html">Machine Learning</a></li>
-                <li><a class="dropdown-item" href="./internal_pages_html/engineering/data_scientist.html">Data Science</a></li>
+                <li><a class="dropdown-item" href="./internal_pages_html/engineering/data_science.html">Data Science</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/cybersecurity.html">Cybersecurity</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/devops_engineer.html">DevOps</a></li>
                 <li><a class="dropdown-item" href="./internal_pages_html/engineering/Python_developer.html">Python Developer</a></li>
@@ -143,7 +142,7 @@
    <script>
     let Name = document.getElementById('nameInp');
    </script>
-   <script>
+   <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Retrieve the user's name from local storage
         const userName = localStorage.getItem('userName');
@@ -152,7 +151,23 @@
             document.getElementById('userNameDisplay').textContent = userName;
         }
     });
-</script>
+</script> -->
+    <script>
+ 
+      // Assuming this code is in your home_page.html or another JavaScript file linked to home_page.html
+
+// Function to parse URL parameters
+function getParameterByName(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Retrieve the user's name from the query parameter
+const userName = getParameterByName('userName');
+
+// Use the user's name wherever needed
+document.getElementById('userName').textContent = userName;
+    </script>
 
 </body>
 </html>

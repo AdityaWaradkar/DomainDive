@@ -88,36 +88,65 @@
         let PasswordInp = document.getElementById('passwordInp');
         let Mainform = document.getElementById('Mainform');
 
-        // let RegisterUser = evt => {
-        //     evt.preventDefault();
-
-        //     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
-        //     .then(credentials => {
-        //         console.log(credentials);
-        //         window.location.href = "home_page.html";
-        //     })
-        //     .catch(error => {
-        //         alert(error.message);
-        //         console.log(error.code);
-        //         console.log(error.message);
-        //     });
-        // }
         let RegisterUser = evt => {
-    evt.preventDefault();
+            evt.preventDefault();
 
-    createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
-    .then(credentials => {
-        console.log(credentials);
-        // Store the user's name in local storage
-        localStorage.setItem('userName', NameInp.value);
-        window.location.href = "home_page.html";
-    })
-    .catch(error => {
-        alert(error.message);
-        console.log(error.code);
-        console.log(error.message);
-    });
-}
+            createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
+            .then(credentials => {
+                console.log(credentials);
+                window.location.href = "home_page.html";
+            })
+            .catch(error => {
+                alert(error.message);
+                console.log(error.code);
+                console.log(error.message);
+            });
+        }
+//         let RegisterUser = evt => {
+//     evt.preventDefault();
+
+//     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
+//     .then(credentials => {
+//         console.log(credentials);
+
+//         // Write user data to the database
+//         const userId = credentials.user.uid;
+//         const userRef = ref(db, 'users/' + userId);
+//         set(userRef, {
+//             name: NameInp.value,
+//             email: EmailInp.value
+//             // You can add other user data here if needed
+//         })
+//         .then(credentials => {
+//                 console.log(credentials);
+//                 window.location.href = "home_page.html";
+//             })
+//         .catch(error => {
+//             console.error("Error writing user data to database:", error);
+//         });
+//     })
+//     .catch(error => {
+//         alert(error.message);
+//         console.log(error.code);
+//         console.log(error.message);
+//     });
+// }
+//         let RegisterUser = evt => {
+//     evt.preventDefault();
+
+//     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
+//     .then(credentials => {
+//         console.log(credentials);
+//         // Store the user's name in local storage
+//         localStorage.setItem('userName', NameInp.value);
+//         window.location.href = "home_page.html";
+//     })
+//     .catch(error => {
+//         alert(error.message);
+//         console.log(error.code);
+//         console.log(error.message);
+//     });
+// }
 
 
 
@@ -130,21 +159,42 @@
         let LoginUser = evt => {
             evt.preventDefault();
 
-            signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
-            .then(credentials => {
-                console.log(credentials);
-                localStorage.setItem('userName', credentials.user.displayName);
-                window.location.href = "home_page.html";
-            })
-            .catch(error => {
-                alert(error.message);
-                console.log(error.code);
-                console.log(error.message);
-            });
-        }
+        //     signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
+        //     .then(credentials => {
+        //         console.log(credentials);
+        //         // localStorage.setItem('userName', credentials.user.displayName);
+        //         window.location.href = "home_page.html";
+        //     })
+        //     .catch(error => {
+        //         alert(error.message);
+        //         console.log(error.code);
+        //         console.log(error.message);
+        //     });
+        // }
+        signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
+    .then(credentials => {
+        // Get the currently logged-in user
+        const user = auth.currentUser;
+
+        // Get the user's display name
+        const userName = user.displayName;
+        
+
+        // Redirect to another file
+        window.location.href = "home_page.html?userName=" + userName; // Pass user name in query parameter
+    })
+    .catch(error => {
+        alert(error.message);
+        console.log(error.code);
+        console.log(error.message);
+    });
+}
 
         loginForm.addEventListener('submit', LoginUser);
     </script>
+
+
+
 
 <script>
     document.querySelector('.img__btn').addEventListener('click', function() {
