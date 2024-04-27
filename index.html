@@ -63,6 +63,7 @@
     </div>
 
     <script type="module">
+            
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
         import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
@@ -88,6 +89,8 @@
         let EmailInp = document.getElementById('emailInp');
         let PasswordInp = document.getElementById('passwordInp');
         let Mainform = document.getElementById('Mainform');
+    
+
 
         let RegisterUser = evt => {
             evt.preventDefault();
@@ -139,11 +142,10 @@
 }
 
         loginForm.addEventListener('submit', LoginUser);
-    </script>
 
-
-
-
+</script>
+    
+    
 <script>
     document.querySelector('.img__btn').addEventListener('click', function() {
         document.querySelector('.cont').classList.toggle('s--signup');
