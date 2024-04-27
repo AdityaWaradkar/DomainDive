@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer science</title>
+<link rel="shortcut icon" type="x-icon" href="../../Assets/Untitled design.png">
+<style>
+    .container > p,li,ul{
+        font-family: Julius Sans One;
+        font-weight: 800;
+        word-spacing: 7px;
+    }
+    .roadmap
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shrink-text > p
+    {
+        font-size: 5rem;
+    }
+.header
+{
+    text-align: center;
+    width: 100%;
+}
+
+h1
+{
+    font-family: Julius Sans One;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    line-height: 10px;
+    padding-top: 60px;
+}
+h2,.shrink-text
+{
+    font-family: Josefin Sans;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+.image1
+{
+    height: auto;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image2
+{
+    height: auto;
+    width: 400px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+button
+{
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+    
+.shrink-text {
+    font-size: 18px;
+    color: #333; /* Initial text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition effect */
+
+}
+
+.shrink-text:hover {
+    color: #656565; /* Change text color to white on hover */
+    transform: scale(1.1); /* Shrink the text to 90% of its original size on hover */
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    /* gardient */
+    background: #000000; 
+    background-image: linear-gradient(to right, 
+    #d9e8e9, rgb(237, 237, 237));
+    background-size: cover; 
+    background-clip: border-box; 
+    padding-top: 30px;
+    
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 2.2rem;
+}
+
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* th {
+    background-color: #f2f2f2;
+    color: #333;
+} */
+
+/* Hover Effect */
+a:hover {
+    color: #007bff;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Software Engineer</h1>
+    </div>
+   <br>
+    <h2>Introduction : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/hand-drawn-flat-design-rpa-illustration_23-2149277643.jpg">
+    <p>A person who earns a bachelor's degree in computer science is typically referred to as a "computer scientist" or simply a "graduate with a degree in computer science." They may also be called a "software engineer" or "programmer" depending on their specific role or focus within the field.Programming is the process of creating instructions that a computer can execute to perform specific tasks or solve problems. Programmers, also known as developers or software engineers, use programming languages to write these instructions, which are then translated into machine-readable code that the computer can understand and execute.
+         </p>
+    <br>
+    <hr>
+    <br>
+    <h2>Pre-requisite Knowledge : </h2>
+    <img class="image2" alt="" src="../../Assets/Home_page/Internal_pages/engineering/symbols-come-out-bulb-top-book_1232-908.jpg">
+    <ul>
+        <li>Logical Thinking: Programming requires logical thinking and problem-solving skills to break down complex problems into smaller, manageable tasks and to devise efficient solutions.</li>
+        <li>Computer Literacy: A good understanding of how computers work, including knowledge of operating systems, file systems, and basic computer hardware, is essential for programming.</li>
+        <li>Understanding of Algorithms and Data Structures: Familiarity with fundamental algorithms and data structures such as arrays, linked lists, stacks, queues, and sorting algorithms is crucial for writing efficient and effective code.</li>
+        <li>Programming Fundamentals: Learning the basics of programming concepts such as variables, data types, control structures (e.g., loops, conditional statements), functions, and object-oriented programming (OOP) principles lays the foundation for becoming a programmer.</li>
+        <li>Continuous Learning: The field of programming is constantly evolving, with new technologies, tools, and best practices emerging regularly. Stay updated with industry trends and continuously learn new programming languages, frameworks, and libraries to expand your skill set.</li>
+        <li>Programming Languages: Choose a programming language to start learning. Popular choices for beginners include Python, JavaScript, Java, and C#. Each language has its own syntax and ecosystem, but the fundamental programming concepts are transferable across languages..</li>
+        <li>Portfolio and Projects: Building a portfolio of projects to showcase your skills and experience is essential for landing programming jobs. Work on personal projects, contribute to open-source projects, or participate in hackathons to build your portfolio and demonstrate your abilities to potential employers.</li>
+    </ul>
+     
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+        <div class="roadmap"><a href="../../Assets/Home_page/Internal_pages/bsc/Computer Science and Software Engineering-roadmap.jpg"><h2 class="shrink-text"><p>Roadmap</p></h2></a></div>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Scope in Masters : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/student-graduation-cap-diploma-scroll_107791-15847.jpg">
+    <p>I
+        A master's degree in computer science following a bachelor's in computer science offers an expansive scope for career advancement and specialization within the field. Through advanced coursework and hands-on projects, students deepen their understanding of complex topics such as artificial intelligence, data science, cybersecurity, software engineering, and more. Research opportunities provide avenues for innovation and contribute to advancements in the field, while networking events and internships facilitate connections with industry professionals and potential employers. Graduates of master's programs in computer science are well-equipped to pursue higher-level positions, leadership roles, and specialized careers in a wide range of industries, harnessing their adaptable skills and knowledge to drive innovation and success in an ever-evolving technological landscape.
+        
+        
+        
+        
+        
+        
+    </p>
+
+     <br>
+     <br><hr><br><br>
+    
+    <h2>Best Countries and Colleges : </h2>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Colleges</th>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Stanford University, Massachusetts Institute of Technology (MIT), University of California Carnegie Mellon University, Harvard University
+                </td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>University of Oxford, University of Cambridge, Imperial College London,University College London(UCL),University of Edinburgh  </td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>University of Toronto, University of British Columbia(UBC), McGill University, Simon Fraser University </td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>Technical University of Munich (TUM), University of Freiburg , RWTH Aachen University  </td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>University of Melbourne, Australian National University(ANU), University of Sydney,University of New South Wales(UNSW), Queensland University of Technology(QUT)</td>
+        </tr>
+    
+    </table>
+
+    <br><br><hr><br><br>
+    
+    <h2>Current Demand Scenario : </h2>
+    <p>
+        The demand for computer science engineers remains exceptionally high, reflecting the pervasive role of technology in today's society. With industries increasingly relying on digital solutions for innovation, efficiency, and growth, computer science engineers are sought after across sectors such as software development, cybersecurity, data analytics, artificial intelligence, and cloud computing. The ongoing digital transformation initiatives of organizations worldwide, coupled with the emergence of new technologies like blockchain, Internet of Things (IoT), and machine learning, continue to drive demand for skilled computer science engineers who can develop, implement, and maintain cutting-edge software solutions. Additionally, the shift towards remote work and the global nature of the tech industry have expanded opportunities for computer science engineers, with companies actively recruiting talent from diverse backgrounds and locations. As a result, computer science engineers with a solid foundation in programming, problem-solving, and critical thinking skills are well-positioned to thrive in today's dynamic and rapidly evolving technological landscape.
+        
+        
+        
+        
+        
+        </p> 
+    
+    <br><br><hr><br><br>
+    <h2>Job Roles : </h2>
+    <p>
+        Programmers can fill a variety of roles across different industries and sectors. Here are some common job roles for programmers:
+        <li>Software Developer/Engineer: This is a broad term encompassing professionals who design, develop, test, and maintain software applications or systems.</li>
+        <li>Mobile App Developer: Focuses on creating applications for mobile devices such as smartphones and tablets, often using platforms like iOS (using Swift or Objective-C) or Android (using Java or Kotlin).</li>
+        <li>Backend Developer: Works on the server-side of web applications, dealing with databases, server logic, and APIs using languages like Python, Ruby, Java, or Node.js.</li>
+        <li>Frontend Developer: Concentrates on the client-side of web applications, dealing with user interface (UI) and user experience (UX) aspects using HTML, CSS, and JavaScript.</li>
+        <li>Game Developer: Creates video games for consoles, PCs, or mobile devices using game engines like Unity or Unreal Engine, along with programming languages such as C++, C#, or Python.</li>
+        <li>Security Engineer: Specializes in ensuring the security of software systems, conducting vulnerability assessments, implementing security protocols, and addressing cybersecurity threats..</li>
+        <li>UI/UX Designer: Collaborates with developers to design intuitive user interfaces and engaging user experiences for websites, applications, and software products.</li>
+        
+        </p>
+    <br><br><hr><br><br>
+    <h2>Expected Salary : </h2>
+    <p><li>
+        Entry-level/Junior Programmer: Typically, those with 0-2 years of experience can expect salaries ranging from $50,000 to $80,000 per year, depending on the location and the demand for programmers in that area.</li>
+    <li>
+        Mid-level Programmer: With 2-5 years of experience, programmers can earn salaries ranging from $70,000 to $120,000 per year. Again, this varies based on factors like location and industry demand.
+    </li><li>Senior Programmer/Software Engineer: Those with 5+ years of experience, or who have specialized skills, can earn salaries upwards of $100,000 to $200,000 per year. Senior positions often come with added responsibilities and leadership roles.</li>
+    <li>
+        Specialized Roles (e.g., Data Scientists, Machine Learning Engineers): Professionals with expertise in specialized areas such as data science or machine learning often command higher salaries, ranging from $100,000 to $250,000 or more, depending on experience and demand.
+    </li><li>Technical Leads/Managers: Professionals who take on leadership roles, such as technical leads or engineering managers, can earn salaries ranging from $120,000 to $250,000 or more, depending on the size and location of the company.</li></p>
+    
+</div>
+
+</body>
+</html>

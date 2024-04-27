@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DomainDive</title>
+    <link rel="shortcut icon" type="x-icon" href="./Assets/Untitled design.png">
     <link rel="stylesheet" href="./login_sign_up.css">
     <script type="module" src="./login.js"></script>
 </head>
@@ -102,51 +103,7 @@
                 console.log(error.message);
             });
         }
-//         let RegisterUser = evt => {
-//     evt.preventDefault();
 
-//     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
-//     .then(credentials => {
-//         console.log(credentials);
-
-//         // Write user data to the database
-//         const userId = credentials.user.uid;
-//         const userRef = ref(db, 'users/' + userId);
-//         set(userRef, {
-//             name: NameInp.value,
-//             email: EmailInp.value
-//             // You can add other user data here if needed
-//         })
-//         .then(credentials => {
-//                 console.log(credentials);
-//                 window.location.href = "home_page.html";
-//             })
-//         .catch(error => {
-//             console.error("Error writing user data to database:", error);
-//         });
-//     })
-//     .catch(error => {
-//         alert(error.message);
-//         console.log(error.code);
-//         console.log(error.message);
-//     });
-// }
-//         let RegisterUser = evt => {
-//     evt.preventDefault();
-
-//     createUserWithEmailAndPassword(auth, EmailInp.value, PasswordInp.value)
-//     .then(credentials => {
-//         console.log(credentials);
-//         // Store the user's name in local storage
-//         localStorage.setItem('userName', NameInp.value);
-//         window.location.href = "home_page.html";
-//     })
-//     .catch(error => {
-//         alert(error.message);
-//         console.log(error.code);
-//         console.log(error.message);
-//     });
-// }
 
 
 
@@ -156,21 +113,12 @@
         let PasswordInp1 = document.getElementById('passSI');
         let loginForm = document.getElementById('loginForm');
 
-        let LoginUser = evt => {
+        let LoginUser = evt => 
+        {
             evt.preventDefault();
 
-        //     signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
-        //     .then(credentials => {
-        //         console.log(credentials);
-        //         // localStorage.setItem('userName', credentials.user.displayName);
-        //         window.location.href = "home_page.html";
-        //     })
-        //     .catch(error => {
-        //         alert(error.message);
-        //         console.log(error.code);
-        //         console.log(error.message);
-        //     });
-        // }
+
+
         signInWithEmailAndPassword(auth, EmailInp1.value, PasswordInp1.value)
     .then(credentials => {
         // Get the currently logged-in user
