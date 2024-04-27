@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning</title>
+<style>
+    .container > p,li,ul{
+        font-family: Julius Sans One;
+        font-weight: 800;
+        word-spacing: 7px;
+    }
+    .roadmap
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shrink-text > p
+    {
+        font-size: 5rem;
+    }
+.header
+{
+    text-align: center;
+    width: 100%;
+}
+
+h1
+{
+    font-family: Julius Sans One;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    line-height: 10px;
+    padding-top: 60px;
+}
+h2,.shrink-text
+{
+    font-family: Josefin Sans;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+.image1
+{
+    height: auto;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image2
+{
+    height: auto;
+    width: 400px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+button
+{
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+    
+.shrink-text {
+    font-size: 18px;
+    color: #333; /* Initial text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition effect */
+
+}
+
+.shrink-text:hover {
+    color: #656565; /* Change text color to white on hover */
+    transform: scale(1.1); /* Shrink the text to 90% of its original size on hover */
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    /* gardient */
+    background: #000000; 
+    background-image: linear-gradient(to right, 
+    #d9e8e9, rgb(237, 237, 237));
+    background-size: cover; 
+    background-clip: border-box; 
+    padding-top: 30px;
+    
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 2.2rem;
+}
+
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* th {
+    background-color: #f2f2f2;
+    color: #333;
+} */
+
+/* Hover Effect */
+a:hover {
+    color: #007bff;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Geotechnical Engineer</h1>
+    </div>
+   <br>
+    <h2>Introduction : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/hand-drawn-flat-design-rpa-illustration_23-2149277643.jpg">
+    <p>A lot of people are attracted to geology and other earth sciences because they love to be outdoors. These people wonder how the magnificent rock formations that they see, like those in Yosemite in California, were formed. They want to study the processes that create and modify landforms.
+        In its broadest sense, geology is the study of Earth—its interior and its exterior surface, the rocks and other materials that are around us, the processes that have resulted in the formation of those materials, the water that flows over the surface and lies underground, the changes that have taken place over the vastness of geological time, and the changes that we can anticipate will take place in the near future. Geology is a science: we use deductive reasoning and scientific methods to understand geological problems.
+         </p>
+    <br>
+    <hr>
+    <br>
+    <h2>Pre-requisite Knowledge : </h2>
+    <img class="image2" alt="" src="../../Assets/Home_page/Internal_pages/engineering/symbols-come-out-bulb-top-book_1232-908.jpg">
+    <ul>
+        <li>Bachelor's Degree: A bachelor's degree in civil engineering, geological engineering, geotechnical engineering, or a related field is typically required.</li>
+        <li>Engineering Fundamentals: Solid understanding of fundamental engineering principles such as mechanics, structural analysis, fluid mechanics, and materials science.</li>
+        <li>Geology: Knowledge of geology including rock types, formation processes, geological structures, and how they influence the behavior of soil and rock masses.</li>
+        <li>Soil Mechanics and Rock Mechanics: Understanding of soil and rock mechanics, including topics such as soil classification, soil behavior under different loading conditions, shear strength, consolidation, and slope stability.</li>
+        <li>Soil Mechanics and Rock Mechanics: Understanding of soil and rock mechanics, including topics such as soil classification, soil behavior under different loading conditions, shear strength, consolidation, and slope stability.</li>
+        <li>Foundation Engineering: Knowledge of foundation types, design principles, and methods for analyzing and designing foundations for structures.</li>
+        <li>Professional Licensure: In many jurisdictions, geotechnical engineers are required to obtain a professional engineering license, which typically involves passing a licensure exam and meeting education and experience requirements.</li>
+    </ul>
+     
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+        <div class="roadmap"><a href="../../Assets/Home_page/Internal_pages/bsc/Bachelor's Degree in Geology-roadmap.jpg"><h2 class="shrink-text"><p>Roadmap</p></h2></a></div>
+
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Scope in Masters : </h2>
+    <img class="image1" alt="" src="../../Assets/Home_page/Internal_pages/engineering/student-graduation-cap-diploma-scroll_107791-15847.jpg">
+    <p>In order to become a Geologist, aspiring candidates after clearing Class 12th can pursue various undergraduate and postgraduate Geology courses such as B.Tech Earth Science, BA Geology, and B.Sc in Geology, from any of the Top Geology Colleges across the country some of them being Banaras Hindu University, Fergusson College, St. Xavier’s College. Admissions to these colleges are done both on the basis of merit as well as on the basis of entrance exams such as CUET, GSAT and OUAT.  
+    </p>
+
+     <br>
+     <br><hr><br><br>
+    
+    <h2>Best Countries and Colleges : </h2>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Colleges</th>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Stanford University, Massachusetts Institute of Technology (MIT), University of California Carnegie Mellon University, Harvard University
+                </td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>University of Oxford, University of Cambridge, Imperial College London,University College London(UCL),University of Edinburgh  </td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>University of Toronto, University of British Columbia(UBC), McGill University, Simon Fraser University </td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>Technical University of Munich (TUM), University of Freiburg , RWTH Aachen University  </td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>University of Melbourne, Australian National University(ANU), University of Sydney,University of New South Wales(UNSW), Queensland University of Technology(QUT)</td>
+        </tr>
+    
+    </table>
+
+    <br><br><hr><br><br>
+    
+    <h2>Current Demand Scenario : </h2>
+    <p>The need for geologists will continue to grow for as long as we are building structures. Geologists are hired by the government and private institutions to assess whether a location can handle buildings of certain sizes. Some areas have water in their soil. Others are very prone to seismic activity, and some of them or not suitable for construction. Therefore, there will always be a need to conduct research, analyze data, and make informed decisions based on their findings.</p> 
+    
+    <br><br><hr><br><br>
+    <h2>Job Roles : </h2>
+    <p>
+        Geotechnical engineers can work in various industries and take on different job roles depending on their expertise and interests. Here are some common job roles for geotechnical engineers:
+        <li>Site Investigation Engineer: Site investigation engineers are responsible for planning and executing field investigations to assess subsurface conditions at construction sites. They use techniques such as borehole drilling, soil sampling, and geophysical surveys to gather data for geotechnical analysis.</li>
+        <li>Slope Stability Engineer: Slope stability engineers assess the stability of natural and man-made slopes, such as embankments, cut slopes, and retaining walls. They evaluate factors such as soil properties, groundwater conditions, and external loads to determine the risk of slope failure and recommend mitigation measures.</li>
+        <li>Tunneling Engineer: Tunneling engineers specialize in the design and construction of tunnels and underground structures. They assess geological conditions along tunnel alignments, analyze ground behavior during excavation, and design support systems to ensure the safety and stability of the tunnel.</li>
+        <li>Geotechnical Project Manager: Geotechnical project managers oversee geotechnical engineering projects from conception to completion. They coordinate project teams, manage budgets and schedules, and ensure that project objectives are met while adhering to quality and safety standards.</li>
+        <li>Geotechnical Software Developer: Geotechnical software developers design and develop software tools for geotechnical analysis, modeling, and visualization. They work closely with geotechnical engineers to understand their needs and create user-friendly software solutions to streamline workflows and improve productivity.</li>
+        <li>Environmental Geotechnical Engineer: Environmental geotechnical engineers assess the environmental impact of construction projects on soil and groundwater quality. They design remediation plans for contaminated sites and implement measures to minimize environmental risks during construction activities.</li>
+        <li>Geotechnical Consultant: Geotechnical consultants provide expert advice and solutions to clients on a wide range of geotechnical issues. They may work on projects such as site investigations, slope stability assessments, foundation designs, and risk assessments for construction projects.</li>
+        
+        </p>
+    <br><br><hr><br><br>
+    <h2>Expected Salary : </h2>
+    <p><li>The salary of a geotechnical engineer can vary depending on factors such as location, level of education and experience, industry, and employer. Here are some general salary ranges for geotechnical engineers:</li>
+    <li>
+        Entry-Level Geotechnical Engineer: Typically, entry-level geotechnical engineers with a bachelor's degree can expect to earn salaries ranging from $50,000 to $70,000 per year, although this can vary based on location and other factors.
+    </li><li>Mid-Level Geotechnical Engineer: Geotechnical engineers with a few years of experience and possibly a master's degree can earn salaries ranging from $70,000 to $100,000 per year.</li>
+    <li>
+        Senior-Level Geotechnical Engineer: Senior geotechnical engineers with extensive experience, advanced degrees, and possibly professional licensure can earn salaries upwards of $100,000 per year, with some senior engineers earning well over $150,000 per year.
+    </li><li>Geotechnical Engineering Managers or Directors: Those in managerial or directorial positions within geotechnical engineering firms or departments can earn salaries exceeding $150,000, with some earning over $200,000 per year, depending on the size and scope of their responsibilities.</li></p>
+    
+</div>
+
+</body>
+</html>
+
